@@ -1,0 +1,22 @@
+{
+  "name": "@nestfy/utils",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist",
+    "package.json"
+  ],
+  "scripts": {
+    "build": "node ../../scripts/build.mjs",
+    "clean": "rm -rf dist"
+  },
+  "sideEffects": false,
+  "keywords": [],
+  "author": "github.com/waseem-sajjad",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^5.5.4"
+  }
+}

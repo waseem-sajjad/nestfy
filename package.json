@@ -1,6 +1,6 @@
 {
   "name": "nestfy",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "private": false,
   "description": "",
   "main": "index.js",
@@ -20,5 +20,8 @@
     "globals": "^15.8.0",
     "typescript": "^5.5.4",
     "typescript-eslint": "^7.17.0"
+  },
+  "dependencies": {
+    "@changesets/cli": "^2.27.7"
   }
 }

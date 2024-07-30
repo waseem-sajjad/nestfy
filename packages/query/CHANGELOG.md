@@ -1,11 +1,11 @@
 # @nestfy/query
 
-## 1.0.0
+## 1.1.1
 
 - Initial release
 
 ### Patch Changes
 
 - Updated dependencies
-  - @nestfy/utils@1.0.0
-  - @nestfy/core@1.0.0
+  - @nestfy/utils@1.1.1
+  - @nestfy/core@1.1.1

@@ -9,8 +9,8 @@
     "package.json"
   ],
   "scripts": {
-    "build": "node ../../scripts/build.mjs",
-    "clean": "rm -rf dist"
+    "build": "tsc -b",
+    "clean": "rm -rf ./dist"
   },
   "sideEffects": false,
   "keywords": [],

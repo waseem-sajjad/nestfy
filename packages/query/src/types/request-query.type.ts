@@ -58,3 +58,7 @@ export interface Request extends Omit<ExpressRequest, "query"> {
   query: RequestQuery;
   parsedQuery?: ParsedQuery;
 }
+
+export interface ParsedRequest {
+  parsedQuery: ParsedQuery;
+}

@@ -9,13 +9,13 @@
     "package.json"
   ],
   "scripts": {
-    "build": "node ../../scripts/build.mjs",
-    "clean": "rm -rf dist"
+    "build": "tsc -b",
+    "clean": "rm -rf ./dist"
   },
   "peerDependencies": {
-    "@nestjs/common": "latest",
-    "@nestjs/core": "latest",
-    "reflect-metadata": "latest"
+    "@nestjs/common": "^10.0.0",
+    "@nestjs/core": "^10.0.0",
+    "reflect-metadata": "^0.2.0"
   },
   "sideEffects": false,
   "keywords": [],

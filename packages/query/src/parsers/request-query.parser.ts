@@ -12,7 +12,9 @@ import {
   isSelect,
   isString,
   stringOrArrayMap,
-} from "@nestpack/utils";
+} from "@nestfy/utils";
+import { ValidationException } from "@nestfy/core";
+
 import type {
   ParsedJoin,
   ParsedLimit,
@@ -24,7 +26,6 @@ import type {
   ParsedSelect,
 } from "../interfaces";
 import type { RequestQuery, FieldS, Search } from "../types";
-import { ValidationException } from "@nestpack/core";
 
 export class RequestQueryParser {
   private constructor() {}
@@ -140,7 +141,7 @@ export class RequestQueryParser {
       });
     };
 
-    if (Object.hasOwn(query, "or")) {
+    if (query.or) {
       return parseobj(query.or);
     }
 
@@ -155,7 +156,7 @@ export class RequestQueryParser {
 
     const data = this.parseSearchObj(obj);
 
-    const result: any = Object.hasOwn(obj as object, "or")
+    const result: any = Object.hasOwnProperty.call(obj, "or")
       ? { or: data }
       : data;
 

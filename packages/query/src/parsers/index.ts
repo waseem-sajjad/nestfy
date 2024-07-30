@@ -1,1 +1,1 @@
-export * from './request-query.parser';
+export * from "./request-query.parser";
